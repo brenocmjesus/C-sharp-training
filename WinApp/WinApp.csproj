@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B7F06E3-8D19-4E22-A3FD-0CE9D9C6B649}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WinApp</RootNamespace>
+    <AssemblyName>WinApp</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCambioCheckBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCambioCheckBox.Designer.cs">
+      <DependentUpon>frmCambioCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCambioDropDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCambioDropDown.Designer.cs">
+      <DependentUpon>frmCambioDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCambioRadioButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCambioRadioButton.Designer.cs">
+      <DependentUpon>frmCambioRadioButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCumprimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCumprimentos.Designer.cs">
+      <DependentUpon>frmCumprimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFahrenheit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFahrenheit.Designer.cs">
+      <DependentUpon>frmFahrenheit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNomeEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNomeEmail.Designer.cs">
+      <DependentUpon>frmNomeEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotaFinal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotaFinal.Designer.cs">
+      <DependentUpon>frmNotaFinal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuantoTempoPassou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuantoTempoPassou.Designer.cs">
+      <DependentUpon>frmQuantoTempoPassou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQueHorasSao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQueHorasSao.Designer.cs">
+      <DependentUpon>frmQueHorasSao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCambioCheckBox.resx">
+      <DependentUpon>frmCambioCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCambioDropDown.resx">
+      <DependentUpon>frmCambioDropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCambioRadioButton.resx">
+      <DependentUpon>frmCambioRadioButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCumprimentos.resx">
+      <DependentUpon>frmCumprimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFahrenheit.resx">
+      <DependentUpon>frmFahrenheit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNomeEmail.resx">
+      <DependentUpon>frmNomeEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotaFinal.resx">
+      <DependentUpon>frmNotaFinal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuantoTempoPassou.resx">
+      <DependentUpon>frmQuantoTempoPassou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQueHorasSao.resx">
+      <DependentUpon>frmQueHorasSao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
